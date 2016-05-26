@@ -1,0 +1,18 @@
+doctype html
+// placeholder="Name"
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', type='text/css', href='css/page_signin.css')
+  body.bg(style='width:100%;')
+    img.bg-image(src='images/5.png')
+    form
+      .form-login
+        input.textbox(type='email', placeholder='E-mail', required='email')
+        br
+        br
+        input.textbox(type='password', placeholder='Password')
+        br
+        br
+        input.myButton(type='submit', value='SIGN IN')
+        input.myButton(type='button',onclick="window.location.href='/sign_up'", value='SIGN UP')

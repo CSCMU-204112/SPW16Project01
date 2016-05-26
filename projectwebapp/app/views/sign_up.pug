@@ -1,0 +1,63 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', type='text/css', href='css/page_signup.css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(type='text/javascript', src='js/page_signup.js')
+  body
+    .form
+      ul.tab-group
+        li.tab.active
+          a(href='#signup') Sign Up
+        li.tab
+          a(href='#login') Log In
+      .tab-content
+        #signup
+          h1 Sign Up
+          form(action='/sign_up', method='post')
+            .top-row
+              .field-wrap
+                label
+                  | First Name
+                  span.req *
+                input(name='m_fname',type='text', required='', autocomplete='off')
+              .field-wrap
+                label
+                  | Last Name
+                  span.req *
+                input(name='m_lname',type='text', required='', autocomplete='off', style='border-radius:5px')
+            .field-wrap
+              label
+                | Email Address
+                span.req *
+              input(name='m_email',type='email', required='', autocomplete='off')
+            .field-wrap
+              label
+                | Password
+                span.req *
+              input(name='m_password',type='password', required='', autocomplete='off')
+            .field-wrap
+              label
+                | Confirm Password
+                span.req *
+              input(name='m_conpass',type='password', required='', autocomplete='off')
+            button.button.button-block(type='submit') Get Started
+        #login
+          h1 Welcome Back!
+          form(action='/', method='post')
+            .field-wrap
+              label
+                | Name
+                span.req *
+              input(type='email', required='', autocomplete='off')
+            .field-wrap
+              label
+                | Password
+                span.req *
+              input(type='password', required='', autocomplete='off')
+            p.forgot
+              a(href='#') Forgot Password?
+            button.button.button-block Log In
+      // tab-content
+    // /form
