@@ -1,0 +1,17 @@
+body{
+  background-color:#EFB36C;
+  padding-bottom:30px;
+}
+
+.title{
+  text-decoration:underline;
+}
+
+.post-body{
+  padding:10px;
+  box-shadow:2px 2px 15px black;
+}
+
+.submit{
+  display:block;
+}
