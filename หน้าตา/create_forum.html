@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="create_forum.css">
-        <script type="text/javascript" src="create_forum.js"></script>
-    </head>
-    <body>
-    <div class="container posts">
-  <h1>กระทู้ของฉัน</h1>
-</div>
 
-<div class="container create-post">
-  <h4>ชื่อกระทู้</h4>
-  <input class="post-title-input" placeholder="ตั้งชื่อกระทู้" type="text" />
-  <h4>รายละเอียดของกระทู้</h4>
-  <textarea class="post-body-input" name="" id="" cols="30" rows="10"></textarea>
-  <button class="btn btn-success submit">ตั้งกระทู้</button>
-</div>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="create_forum.css">
+    <script type="text/javascript" src="create_forum.js"></script>
+</head>
+
+<body style="background-image: url(aa.png); background-size: 100%">
+    <!--  <img src="aa.png" class="bg-image"> -->
+    <!-- Dropdown Structure -->
+    <!--  <li class="divider"></li>
+  <li><a href="#!">three</a></li> -->
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <!-- <div class="figure"> -->
+                <img class="scaled" src="1.png">
+                <!-- </div> -->
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><i class="material-icons">perm_contact_calendar</i></li>
+                <li><a href="#">ตั้งกระทู้</a></li>
+                <li>
+                    <h6 style="color: yellow">user</h6></li>
+                <!-- Dropdown Trigger -->
+                <li><a href="#">ออกจากระบบ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="top">
+        <div class="container posts">
+            <br>
+            <h4>กระทู้ของฉัน</h4>
+        </div>
+        <div class="container create-post">
+            <h5>ชื่อกระทู้</h5>
+            <input class="post-title-input" placeholder="ตั้งชื่อกระทู้" type="text" />
+            <h5>รายละเอียดของกระทู้</h5>
+            <br>
+            <textarea style="height: 180px;" class="post-body-input" class="box" name="" id="" cols="30" rows="10"></textarea>
+            <button class="btn btn-success submit">ตั้งกระทู้</button>
+        </div>
+    </div>
+</body>
+
 </html>

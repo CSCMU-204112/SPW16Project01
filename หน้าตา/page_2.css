@@ -287,47 +287,13 @@ body {
     width: 95px;
 }
 
-.btn-like:hover {
-    background: #E74C3C;
-    color: #FFF;
+
 }
 
-.btn-share:hover {
-    background: #F39C12;
-    color: #FFF;
-}
-
-.liked,
-.liked:focus {
-    background: #E74C3C;
-    color: #FFF;
-}
-
-.shared,
-.shared:focus {
-    background: #F39C12;
-    color: #FFF;
-}
 
 hr {
     width: 95%;
 }
-
-.button-links {
-    margin-bottom: 10px;
-    margin-left: 15px;
-}
-
-.button-links li {
-
-    display: inline;
-    list-style-type: none;
-    padding: 8px;
-    font-family: Raleway, sans-serif;
-    font-size: 16px;
-    color: #7F8C8D;
-}
-
 
 
 input {
@@ -386,7 +352,7 @@ input:focus {
 
 .top-comment{
     width: 80%;
-    height: 350px;
+    height: auto;
     background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
