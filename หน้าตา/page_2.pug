@@ -1,0 +1,79 @@
+doctype html
+html
+head
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+    |     
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    |     
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    |     
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    |     
+    link(rel='stylesheet', type='text/css', href='page_2.css')
+    |     
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    |     
+    script(type='text/javascript', src='toy.js')
+    |     
+    script.
+      $(document).ready(function() {
+      $(".dropdown-button").dropdown();
+      })
+    |     
+    meta(charset='utf-8')
+    |     
+    title Mipmip
+  body(style='background-image: url(aa.png); background-size: 100%')
+    // <img src="aa.png" class="bg-image">
+    // Dropdown Structure
+    //
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    nav
+      .nav-wrapper
+        a.brand-logo(href='#!')
+          // <div class="figure">
+          img.scaled(src='1.png')
+          // </div>
+        |                 
+        |             
+        ul.right.hide-on-med-and-down
+          li
+            center &#xE2B;&#xE31;&#xE27;&#xE02;&#xE49;&#xE2D;&#xE01;&#xE23;&#xE30;&#xE17;&#xE49;&#xE39;&nbsp;&nbsp;/&nbsp;&nbsp;
+          |                 
+          li.user-name by user&nbsp;&nbsp;
+          |                 
+          li
+            i.material-icons perm_contact_calendar
+          |                 
+          li
+            h6(style='color: yellow') user
+          // Dropdown Trigger
+          li
+            a(href='#') &#xE2D;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE23;&#xE30;&#xE1A;&#xE1A;
+    |     
+    .top
+      .top-comment
+        .col-md-12
+          .col-sm-6.col-sm-offset-3
+            .top-comment
+              br
+              |                         
+              p.title &#xE02;&#xE49;&#xE2D;&#xE04;&#xE27;&#xE32;&#xE21;
+              |                         
+              p.user-name by user
+              |                         
+              hr
+    |     
+    #form-div
+      form#form1.form
+        p.text
+          textarea#comment.feedback-input(name='text', class='validate[required,length[6,300]]', placeholder='Comment')
+        |             
+        .submit
+          input#button-blue(type='submit', value='SEND')
+          |                 
+          .ease
