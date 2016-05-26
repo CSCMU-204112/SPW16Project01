@@ -1,7 +1,7 @@
 module.exports = {
     host: 'localhost',
     port: 5432,
-    database: 'database_workshop',
+    database: 'backup',
     user: 'thanaphon1',
     password: '0810356904z'
 };

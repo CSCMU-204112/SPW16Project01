@@ -6,7 +6,9 @@ module.exports = function(app){
         res.render('sign_in');
     });
     //app.get('/student', studentCtrl.getAll);
-    //app.get('/department', departmentCtrl.getAll);
-   // app.post('/sign_up', sign_upCtrl.insertMember);
+    app.get('/sign_up', function(req, res){
+        res.render('sign_up');
+    });
+    app.post('/sign_up', sign_upCtrl.insertMember);
     //app.get('/studentdep', studentCtrl.getAllWithDepartment);
 }

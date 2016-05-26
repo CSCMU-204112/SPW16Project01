@@ -1,4 +1,0 @@
-mkdir controllers views models config public
-touch app.js
-npm install express pug pg-promise body-parser morgan --save --no-bin-links
-sudo npm install -g nodemon
