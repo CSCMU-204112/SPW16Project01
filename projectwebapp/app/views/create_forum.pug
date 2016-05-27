@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    link(rel='stylesheet', type='text/css', href='create_forum.css')
+    script(type='text/javascript', src='create_forum.js')
+  body(style='background-image: url(aa.png); background-size: 100%')
+    // <img src="aa.png" class="bg-image">
+    // Dropdown Structure
+    //
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    nav
+      .nav-wrapper
+        a.brand-logo(href='#!')
+          // <div class="figure">
+          img.scaled(src='1.png')
+          // </div>
+        ul.right.hide-on-med-and-down
+          li
+            i.material-icons perm_contact_calendar
+          li
+            a(href='#') ตั้งกระทู้
+          li
+            h6(style='color: yellow') user
+          // Dropdown Trigger
+          li
+            a(href='#') ออกจากระบบ
+    .top
+      form(action='post_data', method='post')
+        .container.posts
+          br
+          h4 กระทู้ของฉัน
+        .container.create-post
+          h5 ชื่อกระทู้
+          input.post-title-input(name='post_title', placeholder='ตั้งชื่อกระทู้', type='text')
+          h5 รายละเอียดของกระทู้
+          br
+          textarea.post-body-input(name='text_area', style='height: 180px;', id='', cols='30', rows='10')
+          input.btn.btn-success.submit(type='submit', value='ตั้งกระทู้')

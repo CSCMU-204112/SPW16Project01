@@ -1,0 +1,71 @@
+doctype html
+html
+head
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+    |     
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    |     
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    |     
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    |     
+    link(rel='stylesheet', type='text/css', href='css/page_1.css')
+    |     
+    script.
+      $(document).ready(function() {
+      $(".dropdown-button").dropdown();
+      })
+    |     
+    meta(charset='utf-8')
+    |     
+    title Mipmip
+body(style='background-image: url(images/aa.jpg); background-size: 100%')
+  // <img src="aa.png" class="bg-image">
+  // Dropdown Structure
+  
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  nav
+    .nav-wrapper
+      a.brand-logo(href='#!')
+        // <div class="figure">
+        img.scaled(src='images/1.png')
+        // </div>
+      |             
+      ul.right.hide-on-med-and-down
+        li
+          i.material-icons perm_contact_calendar
+        |                 
+        li
+          a(href='#') &#xE15;&#xE31;&#xE49;&#xE07;&#xE01;&#xE23;&#xE30;&#xE17;&#xE39;&#xE49;
+        |                 
+        |                 
+        li
+          h6(style='color: yellow') user
+        // Dropdown Trigger
+        li
+          a(href='/sign_in') &#xE2D;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE23;&#xE30;&#xE1A;&#xE1A;
+  |     
+  .top
+    section#postIndex.widthWrapper
+      article
+        a(target='_blank', href='')
+          h2 First Post
+          |         
+          p First Post data
+      |     
+      article
+        a(target='_blank', href='')
+          h2 Secound Post
+          |         
+          p Secound Post data
+          br
+      |     
+      article
+        a(target='_blank', href='')
+          h2 Third Post
+          |         
+          p Third post data

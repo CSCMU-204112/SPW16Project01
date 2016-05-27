@@ -1,0 +1,361 @@
+.nav-wrapper {
+    background-color: #3e2723;
+}
+
+nav {
+    margin-top: 0;
+    position: fixed;
+    position: relative;
+}
+
+body {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.bg-image {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div.figure {
+    float: right;
+    width: 10%;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+div.figure p {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+img.scaled {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.top {
+    opacity: 0.55;
+    width: 800px;
+    height: 1500px;
+    background-color: #FACFAC;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 50%;
+    height: 120px;
+    float: left;
+    left: 25%;
+    bottom: 0px;
+    position: fixed;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    border-radius: 10px;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 30px 30px 54px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused {
+    color: #30aed6;
+    border: #30aed6 solid 3px;
+}
+
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+
+}
+
+.textarea {
+    width: 100%;
+    height: 100px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+#button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: right;
+    margin-right: 2%;
+    width: 100px;
+    border-radius: 10px;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 12px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -100px;
+    font-weight: 700;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+
+
+/*comment*/
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* Declaring Variables */
+
+
+/* Mixins allows you to make group of CSS declarations */
+
+
+/* Inheritance feature in SCSS */
+
+.img-margin,
+.img-unsplash {
+    margin-bottom: 20px;
+}
+
+
+/* Normal CSS */
+
+body {
+    background: radial-gradient(circle, #5bc0de, #55b1fa);
+    
+}
+
+.card {
+    background: #FFF;
+    margin: 0 auto;
+    padding: 1px 0px;
+    font-family: Raleway, sans-serif;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    /* this is how you can nest in SCSS */
+}
+
+.card .title {
+    color: #5BC0DE;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 20px;
+}
+
+.card .user-name {
+    font-size: 14px;
+    color: #7F8C8D;
+    line-height: 10px;
+    padding-bottom: 20px;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.img-unsplash {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.fa {
+    margin-right: 8px;
+}
+
+.btn-like,
+.btn-like:focus {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #E74C3C;
+    border-color: #E74C3C;
+    background: transparent;
+    margin: 0px 3px;
+    padding: 7px 14px;
+    outline: 0;
+    width: 95px;
+    margin-left: 20px;
+}
+
+.btn-share,
+.btn-share:focus {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #F39C12;
+    border-color: #F39C12;
+    background: transparent;
+    margin: 0px 3px;
+    padding: 7px 14px;
+    outline: 0;
+    width: 95px;
+}
+
+.btn-comment,
+.btn-reply:focus {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #7F8C8D;
+    border-color: #7F8C8D;
+    background: transparent;
+    margin: 0px 3px;
+    padding: 7px 14px;
+    outline: 0;
+    width: 95px;
+}
+
+
+}
+
+
+hr {
+    width: 95%;
+}
+
+
+input {
+    margin: 20px 20px;
+    margin-right: 10px;
+    width: 72%;
+    padding: 12px 15px;
+    box-shadow: none;
+    border: 1px solid #DDD;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    outline: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+input:focus {
+    border-color: #CCC;
+}
+
+.btn-info {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #5BC0DE;
+    border-color: #5BC0DE;
+    background: transparent;
+    margin: 0px 3px;
+    padding: 7px 14px;
+    outline: 0;
+    width: 95px;
+    background: #5BC0DE;
+    color: #FFF;
+    padding: 12px;
+    margin-top: -2px;
+}
+
+#user-name {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+}
+
+.name {
+    color: #5BC0DE;
+}
+
+.top-comment{
+    width: 80%;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}

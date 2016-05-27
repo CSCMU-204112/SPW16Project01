@@ -37,18 +37,19 @@
         </div>
     </nav>
     <div class="top">
+    <form action="post_data" method="post">
         <div class="container posts">
             <br>
             <h4>กระทู้ของฉัน</h4>
         </div>
         <div class="container create-post">
             <h5>ชื่อกระทู้</h5>
-            <input class="post-title-input" placeholder="ตั้งชื่อกระทู้" type="text" />
+            <input name = "post_title" class=" post-title-input" placeholder="ตั้งชื่อกระทู้" type="text" />
             <h5>รายละเอียดของกระทู้</h5>
             <br>
-            <textarea style="height: 180px;" class="post-body-input" class="box" name="" id="" cols="30" rows="10"></textarea>
-            <button class="btn btn-success submit">ตั้งกระทู้</button>
-        </div>
+            <textarea name="text_area" style="height: 180px;" class="post-body-input" class="box" name="" id="" cols="30" rows="10"></textarea>
+            <input class="btn btn-success submit" type="submit" value="ตั้งกระทู้"></input>
+        </div></form>
     </div>
 </body>
 

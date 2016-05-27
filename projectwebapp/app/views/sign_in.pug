@@ -6,12 +6,12 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='css/page_signin.css')
   body.bg(style='width:100%;')
     img.bg-image(src='images/5.png')
-    form
+    form(action='/page_1', method='post')
       .form-login
-        input.textbox(type='email', placeholder='E-mail', required='email')
+        input.textbox(name='m_email',type='email', placeholder='E-mail', required='email')
         br
         br
-        input.textbox(type='password', placeholder='Password')
+        input.textbox(name='m_pass' ,type='password', placeholder='Password')
         br
         br
         input.myButton(type='submit', value='SIGN IN')
